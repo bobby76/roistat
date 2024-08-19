@@ -2,9 +2,8 @@
 document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const errorElements = document.querySelectorAll('.error-message');
-    errorElements.forEach(el => el.style.display = 'none');
-
+    const errors = document.querySelectorAll('.error-message');
+    errors.forEach(el => el.style.display = 'none');
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
